@@ -14,9 +14,9 @@ eg.
 
 - normal vs async vs defer
 
-Normal: 
-   - parsing html line by line - stops parsing - download script - execute script - continue parsing. (more blocking in rendering)
-async:
-   - parsing html line by line - downloads script in background - stops parsing - execute script - continue parsing. (less blocking in rendering)
-defer:
-   - parsing html line by line - downloads script in background - completes HTML parsing first - execute script
+    - Normal: 
+          - parsing html line by line -> stops parsing -> download script -> execute script -> continue parsing. (more blocking in rendering)
+    - async:
+          - parsing html line by line -> downloads script in background -> stops parsing -> execute script -> continue parsing. (less blocking in rendering)
+    - defer:
+          - parsing html line by line -> downloads script in background -> completes HTML parsing first -> execute script
