@@ -12,7 +12,8 @@ eg.
   src="https://example.com/example-framework.js"
   crossorigin="anonymous"></script>
 
-- async vs defer
+- normal vs async vs defer
+
 Normal: 
    - parsing html line by line - stops parsing - download script - execute script - continue parsing. (more blocking in rendering)
 async:
