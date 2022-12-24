@@ -1,5 +1,5 @@
 # Namste React Notes
-- Cross-Origin Resource Sharing (CORS):  
+1. Cross-Origin Resource Sharing (CORS):  
 It is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) 
 other than its own from which a browser should permit loading resources.
 Browsers make a "preflight" request using HTTP OPTIONS method to the server hosting the cross-origin resource, in order to check that the server will permit the actual request.
@@ -12,7 +12,7 @@ eg.
   src="https://example.com/example-framework.js"
   crossorigin="anonymous"></script>
 
-- normal vs async vs defer
+2. normal vs async vs defer
 
     - Normal: 
           - parsing html line by line -> stops parsing -> download script -> execute script -> continue parsing. (more blocking in rendering)
