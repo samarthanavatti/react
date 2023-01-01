@@ -1,9 +1,17 @@
 #container h1 {
-  background-color: black;
-  color: azure;
+  margin-top: 1rem;
 }
 
-#container h2 {
-  background-color: beige;
-  color: black;
+.header {
+  padding: 1rem;
+  width: 98%;
+  background-color: tomato;
+  color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+.body_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
