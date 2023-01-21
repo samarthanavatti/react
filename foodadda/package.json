@@ -1,0 +1,20 @@
+{
+  "name": "foodadda",
+  "version": "1.0.0",
+  "description": "This is food ordering app in react",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "author": "samarth anavatti",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0"
+  }
+}

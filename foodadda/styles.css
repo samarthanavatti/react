@@ -1,0 +1,101 @@
+.logo {
+  width: 5%;
+}
+.title-container {
+  display: flex;
+}
+
+.title-container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.header-contaier {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: rgb(68, 46, 46);
+}
+
+.header-contaier ul {
+  display: flex;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 1rem;
+}
+
+.header-contaier ul li {
+  padding: 5px;
+  color: orange;
+  list-style-type: none;
+}
+
+.header-contaier ul li {
+  padding-left: 20px;
+}
+
+.header-contaier ul li:hover {
+  cursor: pointer;
+}
+
+.card {
+  width: 200px;
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  word-break: break-word;
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+}
+.card img {
+  width: 100%;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8rem;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background: gray;
+  margin: 1rem 2rem;
+  animation: skeleton-loading 2s linear infinite alternate;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8rem;
+}
+
+.search-container {
+  display: flex;
+  margin: 1rem 5rem;
+  justify-content: center;
+}
+.search-container input {
+  margin-left: 1rem;
+  width: 30%;
+  line-height: 1.5rem;
+}
+.search-container button {
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 1%, 59%);
+  }
+  50% {
+    background-color: hsl(200, 20%, 95%);
+  }
+  100% {
+    background-color: hsl(200, 1%, 59%);
+  }
+}
