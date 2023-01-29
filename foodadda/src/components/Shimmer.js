@@ -10,12 +10,10 @@ const Shimmer = () => {
           >
             <div className="p-2">
               <div class="h-28 bg-slate-200 rounded"></div>
-              <div class="space-y-3">
-                <div class="h-[10%] bg-slate-200 rounded"></div>
-                <div class="grid h-[40%] grid-rows-3 gap-4">
-                  <div class="h-2 bg-slate-200 rounded col-span-2"></div>
-                  <div class="h-2 bg-slate-200 rounded col-span-1"></div>
-                </div>
+              <div class="grid h-[40%] grid-rows-4 gap-3">
+                <div class="h-2 bg-slate-200 rounded row-span-1"></div>
+                <div class="h-2 bg-slate-200 rounded row-span-1"></div>
+                <div class="h-2 bg-slate-200 rounded row-span-1"></div>
               </div>
             </div>
           </div>
