@@ -41,7 +41,7 @@ const Body = () => {
           }}
         ></input>
         <button
-          className="ml-5 text-black bg-white hover:bg-gray-200 p-2 border-solid border-2 rounded"
+          className="ml-5 text-black bg-white hover:bg-blue-700  hover:text-white p-2 border-solid border-2 rounded"
           onClick={() => {
             const filteredList = filterData(allRestaurantList, searchText);
             setFilteredRestaurantList(filteredList);
