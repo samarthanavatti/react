@@ -4,6 +4,7 @@ import Body from './components/Body';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import Offers from './components/Offers';
 import About from './components/About';
+import Footer from './components/Footer';
 
 /**
  * Header
@@ -27,8 +28,8 @@ const AppLayout = () => {
     <>
       <Header />
       <Outlet />
+      <Footer />
     </>
-    //footer
   );
 };
 

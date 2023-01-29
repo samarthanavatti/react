@@ -1,5 +1,5 @@
 import RestaurantCard from './RestaurantCard';
-import { restaurantList } from '../constant';
+import { restaurantList } from '../../constant';
 import { useEffect, useState } from 'react';
 import Shimmer from './Shimmer';
 
@@ -31,8 +31,9 @@ const Body = () => {
 
   return (
     <>
-      <div className="search-container">
+      <div className="p-2 m-2 flex justify-center ">
         <input
+          className="w-96 p-2 text-md border-2 rounded"
           type="text"
           value={searchText}
           onChange={(e) => {
@@ -40,6 +41,7 @@ const Body = () => {
           }}
         ></input>
         <button
+          className="ml-5 text-black bg-white hover:bg-gray-200 p-2 border-solid border-2 rounded"
           onClick={() => {
             const filteredList = filterData(allRestaurantList, searchText);
             setFilteredRestaurantList(filteredList);
@@ -48,17 +50,18 @@ const Body = () => {
           Search
         </button>
       </div>
-      {allRestaurantList?.length === 0? (
-      <Shimmer />) : (
-      <div className="card-container">
-        {filteredRestaurantList?.map((restarunt) => {
-          {
-            return (
-              <RestaurantCard {...restarunt.data} key={restarunt.data.id} />
-            );
-          }
-        })}
-      </div>
+      {allRestaurantList?.length === 0 ? (
+        <Shimmer />
+      ) : (
+        <div className="mt-5 mx-10 flex flex-wrap justify-start">
+          {filteredRestaurantList?.map((restarunt) => {
+            {
+              return (
+                <RestaurantCard {...restarunt.data} key={restarunt.data.id} />
+              );
+            }
+          })}
+        </div>
       )}
     </>
   );
